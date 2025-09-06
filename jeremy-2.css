@@ -21,8 +21,8 @@ display: none;
   background: #0a0a0a; /* fallback dark bg */
 }
 
-.all-1{} 
-header{
+
+.header-2{
   position: fixed;
   top: 0;
 
@@ -32,10 +32,17 @@ flex-direction: row;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-;
-padding: 3px;
+
   backdrop-filter: blur(28px);
-margin: 10px;
-gap: 23%;
+width: 100%;
+padding: 7%;
+
+}
+.navv{
+  display: flex;
+
+  align-items: center;
+  justify-content: right
 }
 .nav li a{
    /* position: fixed;
@@ -44,9 +51,23 @@ gap: 23%;
     width: 30px;
     z-index: 1000; */
     text-decoration: none;
-    color: #ffc107;
+    color: black;
+   font-size: 0.9rem;
+   font-family: sans-serif;
 
-
+}
+.nav li{
+  background-color: #ffc107;
+  border-radius: 9999px;
+  padding: 7px;
+  transition: .2s;
+}
+.nav li:active{
+    cursor: pointer;
+    transform: scale(0.7);
+  background-color: black;
+  color: white;
+  border: 1px solid #ffc107;
 }
 .nav{
     display: flex;
@@ -55,12 +76,12 @@ gap: 23%;
   position: fixed;
   z-index: 1000;
   top: -300px;
-
+  left: 24%;
 }
 
 
 .nav.active{
-top: 0;
+top: -10px;
 animation-name: active;
 animation-duration: 1.5s;
 position: relative;
@@ -74,17 +95,27 @@ position: relative;
     top: 20px;
 }
 100%{
- top: 0;
+ top: -10;
 }
 }
 .imggg{
-
+    position: fixed;
+    top: 17px;
+    left: 0px;
+    width: 30px;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .2s;
 }
-
+.imggg:active{
+    transform: scale(0.7);
+    
+}
 .hero-section-1{
      /* background-color: #121212;
       height: 70vh; */
-      background-image: url(jeremy-2.png);
+      background-image: url(assets/jeremy-2.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 150%;
@@ -92,7 +123,7 @@ position: relative;
     /* text-align: center; */
     backdrop-filter: blur();
     margin-top: 55px;
-   width: 100vw;
+   width: 100%;
     }
     .hero-section-1>h1{
  
@@ -123,7 +154,7 @@ font-family: cursive;
 
 .hero-section-ii{
     /* background-color: #1d1818; */
-    border-radius: ;
+   
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -157,7 +188,7 @@ color: white;
   color: white;
 }
 .hero-section-ii>.part-2>.repair>button:active{
-    background-color: yellow;
+outline: none;
     cursor: pointer;
     transition: .2s;
 
@@ -220,7 +251,7 @@ color: white;
  text-align: center;
   /* background-color: #121212; */
   z-index: 5;
-  opacity: ;
+
   padding-bottom: 30px;
 }
 .service-2>li{
@@ -269,9 +300,7 @@ position: relative;
 
 }
     
-    .fade {
-    /* animation: fadeAnimation 9s infinite; */
-    }
+
     .catch-2{
     text-align: center;
     background-color: #1d1818;
@@ -420,7 +449,7 @@ animation-duration: .90s;
     padding: 17px;
     border-radius: 10px;
     border: none;
-    width: 300px;
+    width: 250px;
     outline: none;
     }
     form>textarea{
@@ -428,7 +457,7 @@ animation-duration: .90s;
     border: none;
     border-radius: 10px;
     outline: none;
-    width: 300px;
+    width: 250px;
     }
     form>button{
     padding: 20px;
@@ -479,8 +508,7 @@ margin: 0px;
  -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
-  padding: 30px;                                                                                                                                           */
-
+  padding: 30px;                                                                                                                                           
 }
 .service-3 > li {
   background-color: #121212;
@@ -520,7 +548,10 @@ margin: 5px;
     align-items: center;
 
 }
-.service-3>li>button{
+.service-3>li>a{
+  text-decoration: none;
+}
+.service-3>li>a button{
  width: 70%;
     padding: 10px;
     border-radius: 9999px;
@@ -534,12 +565,12 @@ margin: 5px;
     transition: .2s;
     margin-top: 20px;
 }
-.service-3 li button:hover{
+.service-3 li a button:hover{
 cursor: pointer;
 transform: scale(1.1);
 
 }
-.service-3 li button:active{
+ button:active{
     transform: scale(0.7);
     opacity: 0.2;
 }
@@ -552,7 +583,7 @@ transform: scale(1.1);
 .marquee-container {
   width: 100%;
   overflow: hidden;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: cursive;
   color: #fff;
   font-size: 3rem;
   padding: 20px 0;
@@ -641,7 +672,7 @@ header>nav>ul>li>a:hover{
   text-align: center;
 }
 .blur{
-    background-image: url( jeremy-2.png);
+    background-image: url( assets/jeremy-2.png);
     
    background-repeat: no-repeat;
    background-position: center;
@@ -665,9 +696,7 @@ header>nav>ul>li>a:hover{
   backdrop-filter: blur(5px);
 font-family: cursive;
 margin: 30px;}
-.hero-section-1>h1>.second{
 
-}
 .blur>.blur-2>.gadg{
     /* 
   
@@ -683,10 +712,7 @@ margin: 30px;}
     /* font-family: Georgia, 'Times New Roman', Times, serif;   */
 font-family: cursive;
 }
-.blur-2{
-  /* background: rgba(0, 0, 0, 0.1); */
-    /* backdrop-filter: blur(30px); */
-}
+
 
 .marquee-container {
   width: 100%;
@@ -741,9 +767,7 @@ margin-left: 70px;
     text-decoration: none;
     color: black;
 }
-.hero-section-2>.repair-2>button>a:hover{
-    
-}
+
 .hero-section-2>.repair-2>button:hover{
 
 transform: scale(1.2);color: white;
@@ -814,7 +838,10 @@ transition: .2s;
     font-family: sans-serif;
     text-align: center;
 }
-.service>li>button{
+.service>li>a{
+  text-decoration: none;
+}
+.service>li>a button{
  width: 70%;
     padding: 12px;
     border-radius: 9999px;
@@ -882,7 +909,7 @@ position: relative;
 /* width: 100%; */
 /* max-width: 800px; */
 /* margin:0 auto; */
-overflow: ;
+
 /* margin-left: 65%; */
 /* display: flex; */
 /* align-items: center;
@@ -938,9 +965,7 @@ overflow-wrap: break-word;
 white-space: normal;
 
 }
-.catch>h1:hover{
 
-}
 @keyframes sign{
     0%{
         transform: rotate(0deg);
@@ -1037,9 +1062,6 @@ align-items: center;
 gap: 10%;
 
 }
-#home{
-
-}
 
 .details-2{
 
@@ -1114,15 +1136,7 @@ form>button:active{
     transform: scale(0.7);
     opacity: 0.2;
 }
-.faq{
-  /* background-image: url('photo-1665789318391-6057c533005e (1).avif');
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh; 
-background-attachment: scroll; */
-backdrop-filter: ;
-}
+
 .faq >.faqq>.faqqq>li{
     
 border-radius: 9999px;
