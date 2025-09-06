@@ -16,7 +16,7 @@ Jeremy-tech/
 
 ## 🌍 Live Demo
 👉 [View Site on GitHub Pages](https://dannyblaq-cell.github.io/Jeremy-tech/)  
-*(Link will work once Pages is enabled in repo settings)*
+
 
 ---
 
